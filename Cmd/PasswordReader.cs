@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace SpritzCmd {
+namespace RWTodd.Spritz.Cmd {
 
 sealed class PasswordReader {
 	internal static String Read(String prompt, bool repeat) {

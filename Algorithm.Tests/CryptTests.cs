@@ -4,10 +4,9 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
-using RWT.Spritz;
+using RWTodd.Spritz.Algorithm;
 
-
-namespace RWT.Spritz.Tests
+namespace RWTodd.Spritz.Tests
 {
 
 [TestClass]

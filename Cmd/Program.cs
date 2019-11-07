@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.CommandLineUtils;
 
-namespace SpritzCmd {
+namespace RWTodd.Spritz.Cmd {
 
 class Program {
 	static void Main(string[] args) {

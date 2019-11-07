@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using RWT.Spritz;
+using RWTodd.Spritz.Algorithm;
 using Microsoft.Extensions.CommandLineUtils;
 
-namespace SpritzCmd {
+namespace RWTodd.Spritz.Cmd {
 
 enum HashFormat { BASE64, HEX };
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RWT.Spritz
+namespace RWTodd.Spritz.Algorithm
 {
 
 public sealed class Cipher {
@@ -93,8 +93,8 @@ public sealed class Cipher {
 	}
 
 	public void Soak(Byte[] src, Int32 len) {
-		for(int i = 0; i < len; ++i) {
-			Absorb(src[i]);
+		for(int n = 0; n < len; ++n) {
+			Absorb(src[n]);
 		}
 	}
 
@@ -145,4 +145,4 @@ public sealed class Cipher {
 
 }
 
-} // end namespace RWT.Spritz
+} // end namespace

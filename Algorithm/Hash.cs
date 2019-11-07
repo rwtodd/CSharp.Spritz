@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Collections.Generic;
 
-namespace RWT.Spritz {
+namespace RWTodd.Spritz.Algorithm {
 
 public class Hash {
 	public static void OfCipher(Byte[] tgt, Cipher src) {

@@ -1,8 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using RWT.Spritz;
+using RWTodd.Spritz.Algorithm;
 
-namespace RWT.Spritz.Tests
+namespace RWTodd.Spritz.Tests
 {
 
 [TestClass]

@@ -3,10 +3,10 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using RWT.Spritz;
+using RWTodd.Spritz.Algorithm;
 using Microsoft.Extensions.CommandLineUtils;
 
-namespace SpritzCmd {
+namespace RWTodd.Spritz.Cmd {
 
 sealed class CryptCmd {
 	private readonly SemaphoreSlim semaphore;

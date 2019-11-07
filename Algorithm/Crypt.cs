@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RWT.Spritz
+namespace RWTodd.Spritz.Algorithm
 {
 
 public class Crypto {
@@ -21,9 +21,9 @@ public class Crypto {
 		}
 
 		var h = new Header();
-		Byte[] hdrBytes = null;
+		Byte[]? hdrBytes = null;
 		await Task.Run( () => hdrBytes = h.Generate(pw) );
-		await outstr.WriteAsync(hdrBytes,0,h.Length);
+		await outstr.WriteAsync(hdrBytes!,0,h.Length);
 
 		var c = h.MakeCipher();
 
@@ -40,7 +40,7 @@ public class Crypto {
 		var buff = new Byte[8192];
 		var buff2 = new Byte[8192];
 		Task<int> theRead = instr.ReadAsync(buff, 0, 8192);
-		Task theWrite = null;
+		Task? theWrite = null;
 		while(true) {
 			var amt = await theRead;
 			if(amt == 0) { break; }
@@ -155,7 +155,7 @@ public class Crypto {
 		var buff = new Byte[8192];
 		var buff2 = new Byte[8192];
 		Task<int> theRead = instr.ReadAsync(buff, 0, 8192);
-		Task theWrite = null;
+		Task? theWrite = null;
 		while(true) {
 			var amt = await theRead;
 			if(amt == 0) { break; }
