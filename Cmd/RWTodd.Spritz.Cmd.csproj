@@ -8,9 +8,10 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <AssemblyName>spritz</AssemblyName>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <nullable>enable</nullable>
     <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
+    <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
   </PropertyGroup>
 
 </Project>
