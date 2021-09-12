@@ -49,7 +49,7 @@ sealed class HashCmd {
 		var result = new Byte[hashSize];
 		using( var fl = new FileStream(fn, FileMode.Open, FileAccess.Read)) {
 			await Hash.OfStreamAsync(result,fl);
-			Console.WriteLine("{0}: {1}", fn, DisplayHash(result));
+			Console.WriteLine("{1}\t{0}", fn, DisplayHash(result));
 		}
 	}
 
